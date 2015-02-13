@@ -13,10 +13,6 @@
 </div>
     <form align="center" runat ="server">
         <p class="botao">
-            <asp:Button ID="Confirmado" runat="server" Text="Confirmado" class="btnokconf" align="Center" OnClick="btnokconf_Click" />
-        </p>
-
-        <p class="botao">
             <asp:Button ID="ImprimirBoleto" runat="server" Text="Imprimir Boleto" class="btnokconf" align="Center" OnClick="ImprimirBoleto_Click" />
         </p>
     </form>
