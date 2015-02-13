@@ -8,6 +8,8 @@
 *.doc	 diff=astextplain
 *.DOC	 diff=astextplain
 *.docx diff=astextplain
+
+AOKDSPOdkpoasdposakopdasopd
 *.DOCX diff=astextplain
 *.dot  diff=astextplain
 *.DOT  diff=astextplain
