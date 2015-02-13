@@ -1,0 +1,2061 @@
+﻿@import url('bootstrap/css/bootstrap.min.css');
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700);
+@import '../../../utils/componentes/font-awesome/css/font-awesome.min.css';
+@import url('jquery-ui.min.css');
+
+@media screen and (min-width: 1024px) {
+	body { font-size:1.3em; line-height:1.4em; }
+}
+@media screen and (min-width : 768px) and (max-width : 1023px) {
+	body { font-size:1.2em; line-height:1.3em; }
+}
+@media screen and (max-width : 767px) {
+	body { font-size:1.1em; line-height:1.2em; }
+}
+@media screen and (max-width : 319px) {
+	body { font-size:1em; line-height:1.1em; }
+}
+
+@media only screen and (max-width: 319px) {
+    #cabecalho .baixo .logo img { max-width: 310px;margin-top: -16px; }
+}
+
+* {-webkit-padding-start:0px; }
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+position:inherit;
+}
+
+/* --------------------
+       Layout
+-------------------- */
+
+#FGVIDEFOTO{
+    margin-top: 10px;
+margin-left: 195px;
+}
+
+/* ----- Cabeçalho ----- */
+
+#cabecalho .topo { margin-bottom:30px; padding:4px 0; background-color:rgb(246,246,246); color:rgb(153,153,153); font-weight:bold; font-size:11px; }
+
+#cabecalho .topo .usuario { margin-right:10px; float:left; }
+#cabecalho .topo form { display:inline; }
+
+#cabecalho .topo a { text-transform:uppercase; color:rgb(153,153,153); }
+#cabecalho .topo a:hover { text-decoration:underline; }
+#cabecalho .topo a + a { margin-left:20px; }
+
+#cabecalho .baixo {  }
+#cabecalho .baixo .logo img { max-width: 310px;margin-top: -16px; }
+#cabecalho .baixo .campus { margin:0 0 5px 0; padding:15px 40px; display:inline-block; color:#fff; background-image:url(../imagens/corpo_h1_bg.png); }
+#cabecalho .baixo .campus a { display:block; text-decoration:none; }
+#cabecalho .baixo .campus a .nome { margin-bottom:4px; font-family:'PT Sans Narrow', sans-serif; color:#fff; font-size:22px; line-height:22px; text-transform:uppercase; }
+#cabecalho .baixo .campus a .bem_vindo { margin:0; color:#fff; text-align:center; }
+
+#cabecalho .baixo nav { text-transform:uppercase; font-family:'PT Sans Narrow', sans-serif; }
+
+@media (max-width:767px){
+	#cabecalho .baixo nav { margin-top:20px; }
+}
+
+@media (min-width:768px){
+	#cabecalho .baixo nav { margin-bottom:10px; background:url(../imagens/cabecalho_menu_bg_barra.png) repeat-x center bottom; border:none; }
+	#cabecalho .baixo nav a { padding:5px 10px 4px 10px; color:rgb(12,132,160); }
+	#cabecalho .baixo nav .navbar-header { padding-top:10px; }
+	#cabecalho .baixo nav .navbar-header .navbar-brand { height:auto; }
+	#cabecalho .baixo nav .navbar-nav { padding-top:10px; float:left; }
+	#cabecalho .baixo nav .navbar-nav + .navbar-nav { height:39px; overflow:hidden; float:none; }
+	#cabecalho .baixo nav li a:hover { padding-bottom:0; border-bottom:4px solid rgb(12, 132, 160); background:none; }
+	
+	#cabecalho .baixo nav .home .ico { margin:3px 10px 0 0; float:left; }
+	#cabecalho .baixo nav .home .icon-bar { display:block; width:22px; height:2px; border-radius:1px; }
+	#cabecalho .baixo nav .home .icon-bar + .icon-bar { margin-top:4px; }
+	#cabecalho .baixo nav .home .icon-bar { background-color:#888; }
+}
+
+/* ----- Corpo ----- */
+
+.breadcrumb { margin-bottom:10px; padding:0; background:none; font-family:'PT Sans Narrow', sans-serif; text-transform:uppercase; }
+.breadcrumb li { color:rgb(12,132,160); font-size:14px; }
+.breadcrumb li h1 { margin:0; font-size:14px; display:inline; }
+.breadcrumb li.active { color:rgb(174,174,174); }
+.breadcrumb>li+li:before { content:"\003e" !important; }
+
+h2.titulo { margin-bottom:15px; font-family:'PT Sans Narrow', sans-serif; text-transform:uppercase; color:rgb(46,101,169); font-size:18px; font-weight:bold; }
+
+#corpo.popup { padding:10px; }
+
+.panel a { color:#777; }
+.panel a:hover { text-decoration:none; color:#222; }
+.panel .table td { border-color:#f3f3f3; }
+
+/* ----- Geral ----- */
+
+#rodape .topo { margin-top:30px; padding-top:80px; background:rgb(18,160,184) url(../imagens/rodape_topo_bg.png) repeat-x top center; }
+#rodape .baixo { padding:10px 0; background-image:url(../imagens/rodape_baixo_bg.png); color:#fff; font-size:11px; line-height:23px; margin-top:-2px;}
+#rodape .baixo span { margin-right:7px; }
+#rodape .baixo span + a { padding-left:7px; border-left:1px solid #fff; color:#fff; }
+#rodape .baixo span + a:hover { text-decoration:underline; }
+#rodape .baixo .siga { padding-left:30px; float:left; color:rgb(255,221,0); border-left:1px solid rgb(61, 161, 183); }
+#rodape .baixo ul { margin:0; float:left; -webkit-padding-start:0; margin-top: -10px; }
+#rodape .baixo ul li { height:23px; margin:0 0 0 15px; float:left; list-style-type:none; display:block; }
+#rodape .baixo ul li a { height:23px; display:block; }
+#rodape .baixo ul li .facebook { width:22px; background:url(../imagens/rodape_redes_sociais_ico.png) 0 0; }
+#rodape .baixo ul li .twitter { width:22px; background:url(../imagens/rodape_redes_sociais_ico.png) -23px 0; }
+#rodape .baixo ul li .linkedin { width:31px; background:url(../imagens/rodape_redes_sociais_ico.png) -47px 0; }
+#rodape .baixo ul li .youtube { width:30px; background:url(../imagens/rodape_redes_sociais_ico.png) -116px 0; }
+
+/* --------------------
+Configurações específicas
+-------------------- */
+
+/* ----- Tabs ----- */
+
+.ajax__tab_xp .ajax__tab_header { height:70px; background:none !important; }
+.ajax__tab_xp .ajax__tab_header .ajax__tab_outer { height:70px !important; padding:0; background:none !important; border-right:1px solid rgb(239,239,239); }
+.ajax__tab_xp .ajax__tab_header .ajax__tab_inner { height:70px !important; background:none !important; }
+.ajax__tab_xp .ajax__tab_header .ajax__tab_inner a { border:none; }
+.ajax__tab_xp .ajax__tab_header .ajax__tab_tab { height:70px !important; padding:0 10px !important; text-align:center; background:none !important; color:rgb(82,82,82) !important; font-size:inherit; font-weight:bold; }
+.ajax__tab_xp .ajax__tab_header .ajax__tab_tab i { display:block; height:37px; padding:13px 0 0; line-height:24px; text-align:center; font-size:24px; }
+.ajax__tab_xp .ajax__tab_header .ajax__tab_tab span { display:block; line-height:30px; }
+
+.ajax__tab_xp .ajax__tab_header .ajax__tab_hover .ajax__tab_outer {background:none !important;}
+.ajax__tab_xp .ajax__tab_header .ajax__tab_hover .ajax__tab_inner {background:none !important;}
+.ajax__tab_xp .ajax__tab_header .ajax__tab_hover .ajax__tab_tab {background:none !important;}
+.ajax__tab_xp .ajax__tab_header .ajax__tab_active .ajax__tab_outer { background-image:url(../imagens/corpo_h1_bg.png) !important; }
+.ajax__tab_xp .ajax__tab_header .ajax__tab_active .ajax__tab_inner {background:none !important;}
+.ajax__tab_xp .ajax__tab_header .ajax__tab_active .ajax__tab_tab { color:#fff !important; background:none !important; font-size:inherit; }
+.ajax__tab_xp .ajax__tab_body { background:none !important; border:none !important; }
+
+@media (max-width:419px){
+	.ajax__tab_xp .ajax__tab_header { height:auto; }
+	.ajax__tab_xp .ajax__tab_header .ajax__tab_outer { width:100%; height:auto; border-right:none; }
+	.ajax__tab_xp .ajax__tab_header .ajax__tab_inner { width:100%; }
+	.ajax__tab_xp .ajax__tab_header .ajax__tab_inner a { display:block; }
+	
+	.form-control { height:auto; margin-bottom:5px; }
+}
+
+/* --------------------
+     Formulário
+-------------------- */
+
+input { outline:none; }
+textarea { resize:none; }
+.auto { width:auto !important; }
+
+.btn-success { background-color:rgb(13,77,125); }
+.btn-success:hover { background-color:rgb(7,34,55); }
+
+.paginacao { text-align:center; }
+.paginacao p { display:inline-block; font-size:13px; line-height:13px; }
+.paginacao p label { font-weight:normal; }
+.paginacao p select { padding:3px 2px; color: #555; background-color: #fff; background-image: none; border: 1px solid #ccc; border-radius: 4px; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075); box-shadow: inset 0 1px 1px rgba(0,0,0,.075); -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; }
+.paginacao .botoes a { padding:3px 2px; color: #555; background-color: #fff; background-image: none; border: 1px solid #ccc; cursor:pointer; border-radius: 4px; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075); box-shadow: inset 0 1px 1px rgba(0,0,0,.075); -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; }
+.paginacao .botoes a:hover { text-decoration:none; background-color:rgb(240,240,240); }
+.paginacao .botoes a + a { border-left:none; }
+
+.pager .form-control { width:auto; display:inline; }
+.pager { margin-top:10px; }
+.pager li { padding:2px; }
+.pager li a, .pager li span { padding:3px 5px; }
+.pager select { padding:0 3px; }
+
+
+/* --------------------
+       Texto
+-------------------- */
+
+a:focus { outline:none; }
+
+.paragrafo { text-align:justify; }
+.center { text-align:center; }
+.italic { font-style:italic; }
+.underline { text-decoration:underline; }
+
+/* --------------------
+      Tabelas
+-------------------- */
+
+
+/* --------------------
+      Funções
+-------------------- */
+
+/* ----- Gerais ----- */
+
+.separatorT { padding-top:20px; }
+.separatorB { padding-bottom:20px; }
+.separatorTB { padding-top:20px; padding-bottom:20px; }
+
+/* ----- Gerais ----- */
+
+.left { float:left; }
+.right { float:right; }
+
+/* ----- Clearfix ----- */
+
+.clearfix:after { content:"."; display:block; clear:both; visibility:hidden; line-height:0; height:0; }
+.clearfix { display:inline-block; }
+html[xmlns] .clearfix {	display:block; }
+* html .clearfix { height:1%; }
+
+/*#region Ultimas Altercoes Gerais*/
+
+input[type=radio], input[type=checkbox] {
+margin: 4px 0 0;
+margin-top: 1px \9;
+line-height: normal;
+background-color:black;
+}
+
+input[type=checkbox], input[type=radio] {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+padding: 0;
+background-color:yellow;
+}
+
+#menupqn{
+    margin-left:10px;
+}
+
+#corpo{
+    margin-left: 8%;
+}
+
+#casinha{
+    margin-left: 9px;
+}
+
+.itens{
+    margin-left: -11px;    
+}
+
+#lblErro{
+    background-color: #FA6A6A !important;
+    height: 23px !important;
+    padding: 4px 0 0 6px !important;
+    width: 90% !important;
+    margin-left: -5px !important;
+}
+
+#Corpo_lblErroI{
+    background-color: #FA6A6A !important;
+height: 100% !important;
+padding: 5px 0 5px 6px !important;
+    width: 90% !important;
+    margin-left: 71px !important;
+    margin-bottom: 8px !important;
+}
+
+#lblErroI{
+        background-color: #FA6A6A !important;
+        height: 23px !important;
+        padding: 4px 0 0 6px !important;
+        width: 90% !important;
+        margin-left: -5px !important;
+}
+
+#InteressadoUm{
+    margin: -7px 0 0 -14px;
+}
+
+#divTipoCurso{
+    margin-right: -21px;
+}
+
+#div2TipoCurso{
+    margin-bottom: 0px;
+}
+
+#divCurso{
+    margin-right: -21px;
+}
+
+#div2Curso{
+    margin-bottom: 0px;
+}
+
+#InteressadoDois{
+    margin: 3px 0 -14px -14px;
+}
+
+#divRegiao{
+    margin-right: -21px;
+}
+
+#div2Regiao{
+    margin-bottom: 0px;
+}
+
+#divPeriodo{
+   margin: 6px 0px 0 -14px;
+}
+
+#div2Periodo{
+    margin-bottom: 0px;
+}
+
+#PessoaisUm{
+    height: 51px;
+    margin-top: -7px;
+}
+
+#divNome{
+    height: 51px;
+}
+
+#div2Nome{
+    height: 51px;
+    margin-bottom: 0px;
+}
+
+#PessoaisDois{
+    margin: 6px 0px 0px -14px;
+}
+
+#PessoaisTres{
+    margin: 6px 0px 0 -14px;
+    height: 49px;
+}
+
+#divDDD{
+    height: 50px;
+    margin-bottom: 0px;
+}
+
+#div2DDD{
+    height: 50px;
+    margin-bottom: 0px;
+}
+
+#divTelefone{
+    height: 50px;
+    margin-bottom: 0px;
+    margin-left: -21px;
+}
+
+#div2Telefone{
+    height: 50px;
+    margin-bottom: 0px;
+}
+
+#PessoaisQuatro{
+    margin: 6px 0px 0 -14px;
+    height: 49px;
+}
+
+#divSexo{
+    height: 50px;
+    margin-bottom: 0px;
+}
+
+#div2Sexo{
+    height: 50px;
+    margin-bottom: 0px;
+}
+
+#divNasc{
+    height: 50px;
+    margin-bottom: 0px;
+    margin-left: -21px;
+}
+
+#div2Nasc{
+    height: 50px;
+    margin-bottom: 0px;
+}
+
+#PessoaisCinco{
+    margin: -6px 0px 0 -14px;
+    height: 49px;
+}
+
+#divComoSoube{
+    height: 50px;
+    margin-bottom: 0px;
+}
+
+#div2ComoSoube{
+    height: 50px;
+    margin-bottom: 0px;
+}
+
+#botao{
+    margin: -14px 0 0 0px;
+}
+
+#pPergunta{
+    margin-top: 10px;
+    width: 93%;
+}
+
+.Label{
+    max-width:97%;
+}
+
+#botao2{
+    margin: 24px 0px 0px 0px;
+}
+
+#Form1{
+    margin-top:-25px;
+}
+
+
+
+#teste1{
+    position: absolute;
+    left: 9.7%;
+    height: 60px;
+    width: 310px;
+}
+
+#teste{
+    margin-top: 1px;
+position: absolute;
+right: 9.7%;
+}
+
+#Corpo_lblRealname{
+    font-weight:bold;
+}
+
+#Corpo_Label4{
+    font-weight:bold;
+}
+
+#Corpo_lblSexo{
+    font-weight:bold;
+}
+
+#Corpo_lblData_nascimento{
+    font-weight:bold;
+}
+
+#Corpo_Label1{
+    font-weight:bold;
+}
+
+#Corpo_lblPeriodo{
+    font-weight:bold;
+}
+
+#Corpo_lblPergunta{
+    font-weight:bold;
+}
+
+label{
+    color: black;
+}
+
+#l1{
+    font-weight:bold;
+}
+
+#l2{
+    font-weight:bold;
+}
+
+/*#endregion Ultimas Alteracoes Gerais*/
+
+/*#region Ultimas Alteracoes Gerais Responsivo*/
+
+@media screen and (max-width: 470px) {
+    /*#region Interessado*/
+    #teste1{
+        display:none;
+    }
+
+    #corpo{
+        width: 403px;
+        margin-left: 46%;
+        position: relative;
+        left: -234px;
+    }
+
+    label{
+        font-size:12px;
+    }
+
+    #teste{
+        position: absolute;
+        left: 50%;
+        margin-left: -96px;
+        top: 2px;
+        width: 233px;
+    }
+
+    #teste1{
+        position: absolute;
+        left: 5%;
+        width: 180px;
+        top: 9%;
+    }
+    /*#endregion Interessado*/
+    /*#region InscricaoPassos*/
+    #corpo{
+        margin-left:41%;
+    }
+
+    #divTipoCursoI {
+        width: 289px;
+    }
+
+    #divCursoI{
+        width: 284px;
+    }
+
+    #divComoSoubeI{
+        width:284px;
+        margin-top: 12px;
+    }
+
+
+    #Form1Inscricao{
+        margin-left:-8%;
+    }
+
+    #divPeriodoI{
+        margin-left: 1px;
+    }
+
+    #divCursoI{
+        margin-left:1px;
+        width: 378px;
+    }
+
+    #divTipoCursoI{
+        width:385px;
+    }
+
+    #divComoSoubeI{
+        width: 378px;
+    }
+
+    #Corpo_ddlCatCur{
+        width: 330px !important;
+    }
+
+    #Corpo_ddlCurso{
+        width: 330px !important;
+    }
+
+    #Corpo_ddlRegiao{
+        width: 330px !important;
+    }
+
+    #Corpo_ddlPeriodo{
+        width: 330px !important;
+    }
+
+    #Corpo_folder{
+        width: 330px !important;
+    }
+
+    #Corpo_ddlCLASSE{
+        width: 330px !important;
+    }
+
+    #Corpo_dllCOMOSOUBE{
+        width: 330px !important;
+    }
+
+    #IPessoaisDois{
+        width: 366px;
+    }
+
+    #divNascI{
+        margin-left:-15px;
+    }
+
+    #divEmailI{
+        margin-bottom: 10px;
+        margin-top: 7px;
+        width: 349px;
+    }
+
+    #IResidencialUm{
+        width: 393px;
+    }
+
+    #IResidencialQuatro{
+        width:374px;
+    }
+
+    #divCursoUniUmI{
+        height: 50px;
+        width: 360px;
+        margin: 0 0 6px 0px;
+    }
+
+    #divAnoUmI{
+        height: 50px;
+        width: 153px;
+        margin: 0 0 6px 0px;
+    }
+
+    #divInstUmI{
+        height: 50px;
+        width: 360px;
+        margin: 0 0 6px 0px;
+    }
+
+    #divCursoUniDoisI{
+        height: 50px;
+        width: 360px;
+        margin: 0 0 6px 0px;
+    }
+
+    #divAnoDoisI{
+        height:50px;
+        width:153px;
+        margin:0 0 6px 0;
+    }
+
+    #divInstDoisI{
+        height: 50px;
+        width: 360px;
+        margin: 0 0 6px 0px;
+    }
+
+    #divEmpresaI{
+                height: 50px;
+        width: 360px;
+        margin: 0 0 6px 0px;
+    }
+
+    #divCargoCompI{
+                height: 50px;
+        width: 360px;
+        margin: 0 0 6px 0px;
+    }
+
+    #divCargoI{
+                height: 50px;
+        width: 167px;
+        margin: 0 0 6px 0px;
+    }
+
+    #divDataAdI{
+                height: 50px;
+        width: 180px;
+        margin: 0 0 6px -13px;
+    }
+
+    #divEmailComI{
+                height: 50px;
+        width: 360px;
+        margin: 0 0 6px 0px;
+    }
+
+    #IEndProfDois{
+        width:365px;
+    }
+
+    #divCEPComI{
+        width: 121px;
+    }
+
+    #divEndComI{
+        width:252px;
+    }
+
+    #divCompComI{
+        width: 235px;
+    }
+
+    #divNumComI{
+        width: 121px;
+    }
+
+    #divBairroComI{
+        width: 121px;
+    }
+
+    #divCidadeComI{
+        width: 150px;
+    }
+
+    #divEstadoComI{
+        width: 121px;
+    }
+
+    #IEndProfQuatro{
+        width:360px;
+    }
+
+    #IEndProfSeis{
+        width:360px;
+    }
+
+    #divRegiaoI{
+        width: 360px;
+        margin-bottom: 6px;
+    }
+    /*#endregion Inscricao Passos*/
+}
+
+@media screen and (max-width:767px){
+    /*#region Interessado*/
+    #corpo{
+        margin-left:10%;
+    }
+
+    #ficha{
+        margin-left: 7%;
+    }
+
+    #lblErro{
+        margin-left: -8px;
+    }
+
+    #corpo{
+        width: 468px;
+        margin-left: 50%;
+        position: relative;
+        left: -275px;
+    }
+
+    #Home{
+        display:block;
+    }
+
+    #Institucional{
+        display:block;
+    }
+
+    #Cursos{
+        display:block;
+    }
+
+    #Unidades{
+        display:block;
+    }
+
+    #Biblioteca{
+        display:block;
+    }
+
+    #Internacional{
+        display:block;
+    }
+
+    #Solucoes{
+        display:block;
+    }
+
+    #Galeria{
+        display:block;
+    }
+
+    #Eventos{
+        display:block;
+    }
+
+    #Esags{
+        display:block;
+    }
+    /*#endregion Interessado*/
+    /*#region Inscricao Passos*/
+    #Form1Inscricao{
+        margin-left:-8%;
+    }
+
+    #divPeriodoI{
+        margin-left: 1px;
+    }
+
+    #divCursoI{
+        margin-left:1px;
+        width: 378px;
+    }
+
+    #divTipoCursoI{
+        width:385px;
+    }
+
+    #divComoSoubeI{
+        width: 378px;
+    }
+    /*#endregion Inscricao Passos*/
+}
+
+@media screen and (max-width:1200px){
+    /*#region Interessado*/
+    #lblErro{
+        background-color: #FA6A6A !important;
+        height: 23px !important;
+        padding: 4px 0 0 6px !important;
+        width: 90% !important;
+        margin-left: -5px !important;
+    }
+
+    .navbar-nav{
+        width: 111% !important;
+        margin-left: -12% !important;
+    }
+
+    #menuFluid{
+        margin-left: 62px;
+    }
+
+    #divMenuFichaI{
+        margin-left: 8%;
+        width: 84%;
+    }
+
+    #corpo{
+        margin-left:13%;
+    }
+
+    #teste1{
+        margin-left:10px;
+    }
+
+    #casinha{
+        position: absolute;
+        left:0px;
+    }
+
+    #Galeria{
+        display:none;
+    }
+
+    #Eventos{
+        display:none;
+    }
+
+    #Esags{
+        display:none;
+    }
+
+    /*#endregion Interessado*/
+    /*#region InscricaoPassos*/
+    #menubempqn{
+        margin-left: -28px !important;
+    }
+
+    #corpo{
+        margin-left: 13%;
+        width: 81%;
+    }
+
+    #Form1Inscricao{
+        margin: -10px 0 0 -75px;
+        width: 100%;
+    }
+
+    #Corpo_pnlP2{
+        margin-top: 17px;
+    }
+
+    #Corpo_pnlP1{
+        margin-top: 17px;
+    }
+
+    #Corpo_pnlP3{
+        margin-top: 17px;
+    }
+
+    #PassosOrdem{
+        margin: -16px 0 -24px 0;
+        background-color: white;
+    }
+
+    #PassosOrdem2{
+        margin: -16px 0 -24px 0;
+        background-color: white;
+    }
+
+    #PassosOrdem3{
+        margin: -16px 0 -24px 0;
+        background-color: white;
+    }
+
+    /*#region Passo1*/
+    #divTipoCursoI{
+        height: 50px;
+        width: 331px !important;
+    }
+
+    #div2TipoCursoI{
+        width: 98%;
+    }
+
+    #divCursoI{
+        width: 302px;
+        height: 50px;
+        margin-left: -17px;
+    }
+
+    #Corpo_ddlCurso{
+        width: 302px;
+    }
+
+    #Corpo_ddlCatCur{
+        width: 302px;
+    }
+
+    #IInscricaoDois{
+        margin: 6px 0 0 -14px;
+    }
+
+    #divRegiaoI{
+        width: 330px;
+        height:50px;
+    }
+
+    #divPeriodoI{
+        width: 302px;
+        height:50px;
+        margin-left:-20px;
+    }
+
+    #IComoSoubeUm{
+        margin: 9px 0px 0 -14px;
+    }
+
+    #divFolderI{
+        height: 50px;
+        width:318px;
+    }
+
+    #IComoSoubeDois{
+        margin: 6px 0 0 -14px;
+    }
+
+    #divComoSoubeI{
+        width: 318px;
+    }
+
+    #divClasseI{
+        height: 50px;
+        margin-bottom: -7px;
+        margin-top:6px;
+        width: 318px;
+    }
+    /*#endregion Passo1*/
+    /*#region Passo2*/
+    #divNomeI{
+        height: 50px;
+        width: 385px;
+    }
+
+    #divSexoI{
+        width: 176px;
+        height: 50px;
+        margin-top: -10px;
+        margin-right: 0px;
+    }
+
+    #divNascI{
+        width: 187px;
+        height: 50px;
+        margin-top: -10px;
+        margin-left: -16px;
+    }
+
+    #divCidadeNascI{
+        height: 50px;
+        width: 178px;
+        margin: -10px -17px 0 0;
+    }
+
+    #divUFI{
+        height: 50px;
+        width: 178px;
+        margin: -10px -17px 0 0;
+    }
+
+    #divCivilI{
+        height: 50px;
+        width: 178px;
+        margin: -10px -16px 0 0;
+    }
+
+    #divCPFI{
+        height: 50px;
+        width: 178px;
+        margin: -10px -16px 0 0;
+    }
+
+    #divRGI{
+        height: 50px;
+        width: 178px;
+        margin: -10px -16px 0 0;
+    }
+
+    #divOEI{
+        height: 50px;
+        width: 178px;
+        margin: -10px -16px 0 0;
+    }
+
+    #divPaisNascI{
+        height: 50px;
+        width: 161px;
+        margin: -10px -16px 0 0;
+    }
+
+    #divEmailI{
+        height: 50px;
+        width: 251px;
+        margin: -10px -16px 0 0;
+    }
+
+    #divCEPI{
+        height: 50px;
+        width: 126px;
+        margin: -10px -16px 0 0;
+    }
+
+    #divEndI{
+        height: 50px;
+        width: 286px;
+        margin: -10px -16px 0 0;        
+    }
+
+    #divNumI{
+        height: 50px;
+        width: 126px;
+        margin: -10px -16px 0 0;
+    }
+
+    #divComplementoI{
+        height: 50px;
+        width: 230px;
+        margin: -10px -16px 0 0;
+    }
+
+    #divBairroI{
+        height: 50px;
+        width: 126px;
+        margin: -10px -16px 0 0;
+    }
+
+    #divCidadeI{
+        height: 50px;
+        width: 126px;
+        margin: -10px -16px 0 0;
+    }
+
+    #divEstadoI{
+        height: 50px;
+        width: 126px;
+        margin: -10px -16px 0 0;
+    }
+
+    #divDDDI{
+        height: 50px;
+        width: 87px;
+        margin: -10px -16px 10px 0;
+    }
+
+    #divTelI{
+        height: 50px;
+        width: 126px;
+        margin: -10px -16px 0 0;
+    }
+
+    #divDDD2I{
+        height: 50px;
+        width: 87px;
+        margin: -10px -16px 0 0;    
+    }
+
+    #divCelI{
+        height: 50px;
+        width: 132px;
+        margin: -10px -16px 0 0;
+    }
+    /*#endregion Passo2*/
+    /*#region Passo3*/
+    #IAcademicoUm{
+        margin: -2px 0 0 -15px;
+    }
+
+    #divCursoUniUmI{
+        height: 50px;
+        width: 255px;
+    }
+
+    #divAnoUmI{
+        height: 50px;
+        margin-left: -20px;
+        width: 200px;
+    }
+
+    #divAnoDoisI{
+        width: 200px;
+    }
+
+    #divDataAdI{
+        width: 200px;
+    }
+
+    #IAcademicoDois{
+        margin: 6px 0 0 -15px;
+    }
+
+    #divInstUmI{
+        Height:50px;
+        width: 255px;
+    }
+
+    #IAcademicoTres{
+        margin: 6px 0 0 -14px;
+    }
+
+    #divCursoUniDoisI{
+        height:50px;
+        width:255px;
+    }
+
+    #divAnoDoisI{
+        height:50px;
+        margin-left:-20px;
+        width:200px;
+    }
+
+    #IAcademicoQuatro{
+        margin: 6px 0 0 -14px;
+    }
+
+    #divInstDoisI{
+        height:50px;
+        width:255px;
+    }
+
+    #IEndProfUm{
+        margin: 6px 0 0 -14px;
+    }
+
+    #divEmpresaI{
+        height:50px;
+        width:255px;
+    }
+
+    #divCargoCompI{
+        height:50px;
+        margin-left:-20px;
+        width:200px;
+    }
+
+    #IEndProfDois{
+        margin:6px 0 0 -14px;
+    }
+
+    #divCargoI{
+        height:50px;
+        width:255px;
+    }
+
+    #divDataAdI{
+        height:50px;
+        margin-left:-20px;
+        width:200px;
+    }
+
+    #IEndProfTres{
+        margin:6px 0 0 -14px;
+    }
+
+    #divEmailComI{
+        height:50px;
+        width:437px;
+    }
+
+    #IEndProfQuatro{
+        margin:6px 0 0 -14px;
+    }
+
+    #divCEPComI{
+        height:50px;
+        width:128px;
+    }
+
+    #divEndComI{
+        height:50px;
+        margin-left:-20px;
+        width:329px;
+    }
+
+    #IEndProfCinco{
+        margin:6px 0 0 -14px;
+    }
+
+    #divNumComI{
+        height:50px;
+        width:128px;
+    }
+
+    #divCompComI{
+        height:50px;
+        margin-left:-20px;
+        width:329px;
+    }
+
+    #IEndProfSeis{
+        margin:6px 0 0 -14px;
+    }
+
+    #divBairroComI{
+        height:50px;
+        width:128px;
+    }
+
+    #divCidadeComI{
+        height:50px;
+        margin-left:-20px;
+        width:250px;
+    }
+
+    #divEstadoComI{
+        height:50px;
+        margin-left:-20px;
+    }
+
+    #IEndProfSete{
+        margin:6px 0 0 -14px;
+    }
+
+    #divPerfilComI{
+        height:50px;
+        width:358px;
+    }
+
+    #IEndProfOito{
+        margin:6px 0 0 -14px
+    }
+
+    #divDDDComI{
+        height:50px;
+        width:100px;
+    }
+
+    #divTelComI{
+        height:50px;
+        margin-left:-20px;
+    }
+
+    #IEndProfNove{
+        margin:6px 0 0 -14px;
+    }
+
+    #divDDD2ComI{
+        width:100px;
+    }
+
+    #divFaxComI{
+        height:50px;
+        margin-left:-20px;
+    }
+    /*#endregion Passo3*/
+    /*#endregion*/
+}
+
+@media screen and (max-width:991px){
+    /*#region Interessado*/
+    .navbar-nav{
+        margin-left: -15% !important;
+    }
+
+    #Solucoes{
+        display:none;
+    }
+
+    #Galeria{
+        display:none;
+    }
+
+    #Eventos{
+        display:none;
+    }
+
+    #Esags{
+        display:none;
+    }
+    /*#endregion Interessado*/
+    /*#region Inscricao Passos*/
+    #divPeriodoI {
+        height: 50px;
+        width: 291px;
+        margin: 0px 0 0 -11px;
+    }
+    
+    #divTipoCursoI{
+        height: 50px;
+        width: 291px !important;
+        margin: 0 0 0 0;
+    }
+
+    #Corpo_ddlCatCur{
+        width:256px !important;
+    }
+
+    #divCursoI{
+        height: 50px;
+        width: 291px;
+        margin: 0 0 0 -18px;
+    }
+
+    #divRegiaoI{
+        height: 50px;
+        width: 285px;
+        margin: 0 0 0 0px;
+    }
+
+    #IComoSoubeDois{
+        margin: -1px 0 0 -14px;
+    }
+
+    #IComoSoubeTres{
+        height: 50px;
+        margin: 14px 0 0 -13px;
+    }
+
+    #divComoSoubeI{
+        width: 319px;
+        height:50px;
+    }
+
+    #Corpo_Avanca1{
+        margin-top: 13px;
+    }
+
+    #divSexoI {
+        margin: -9px 0 0 0;
+    }
+
+    #divNascI {
+        margin: -9px 0 0 0;
+    }
+
+    #IInscricaoDois{
+        width: 303px !important;
+    }
+    /*#endregion Inscricao Passos*/
+}
+
+@media screen and (max-width:866px){
+    #IInscricaoUm{
+        width:303px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    /*#region InscricaoPassos*/
+    #lblErro{
+        background-color: #FA6A6A !important;
+        height: 23px !important;
+        padding: 4px 0 0 6px !important;
+        width: 90% !important;
+        margin-left: -5px !important;
+    }
+
+    #Corpo_lMensagem{
+                background-color: #FA6A6A !important;
+        height: 23px !important;
+        padding: 4px 0 0 6px !important;
+        width: 90% !important;
+        margin-left: -5px !important;
+    }
+
+    #corpo{
+        position: relative !important;
+margin-left: 50% !important;
+left: -531px !important;
+    }
+
+    #menuFluid{
+        margin-left: 62px !important;
+    }
+
+    #Form1Inscricao{
+        margin: -10px 0 0 -75px !important;
+        width: 100% !important;
+    }
+
+    #Corpo_pnlP2{
+        margin-top: 17px !important;
+    }
+
+    #Corpo_pnlP1{
+        margin-top: 17px !important;
+    }
+
+    #Corpo_pnlP3{
+        margin-top: 17px !important;
+    }
+
+    #PassosOrdem{
+        margin: -16px 0 -24px 0 !important;
+        background-color: white !important;
+    }
+
+    #PassosOrdem2{
+        margin: -16px 0 -24px 0 !important;
+        background-color: white !important;
+    }
+
+    #PassosOrdem3{
+        margin: -16px 0 -24px 0 !important;
+        background-color: white !important;
+    }
+
+    /*#region Passo1*/
+    #divTipoCursoI{
+        height: 50px;
+    }
+
+    #div2TipoCursoI{
+        width: 98%;
+    }
+
+    #divCursoI{
+        height: 50px;
+        margin-left: -26px;
+    }
+
+    #IInscricaoDois{
+        margin: 6px 0 0 -14px;
+    }
+
+    #divRegiaoI{
+        height:50px;
+    }
+
+    #divPeriodoI{
+        height:50px;
+        margin-left:-20px;
+    }
+
+    #IComoSoubeUm{
+        margin: 9px 0px 0 -14px;
+    }
+
+    #divFolderI{
+        height: 50px;
+        width:337px;
+    }
+
+    #IComoSoubeDois{
+        margin: 6px 0 0 -14px;
+    }
+
+    #divClasseI{
+        height: 50px;
+        margin-bottom: -7px;
+        width:337px;
+    }
+    /*#endregion Passo1*/
+    /*#region Passo2*/
+        #IPessoaisUm{
+            height: 49px;
+            margin: 9px 0 0 -14px;
+        }
+
+        #divSexoI{
+            margin: -9px 0 0 -41%;
+            height: 50px !important;
+        }
+
+        #div2SexoI{
+            height: 50px;
+            margin-bottom: 0px;
+        }
+
+        #divNascI{
+            margin: -9px 0 0 -26%;
+            padding-right: 0px;
+            height: 50px !important;
+        }
+
+        #div2NascI{
+            height: 50px;
+            margin-bottom: 0px;
+        }
+
+
+        #divCidadeNascI{
+            height:50px !important;
+        }
+
+        #divUFI{
+            margin-left: -17px !important;
+            height: 50px !important;
+        }
+
+        #IPessoaisQuatro{
+            margin-top: 7px;
+            height: 50px;
+        }
+
+        #divCivilI{
+            height: 50px;
+        }
+
+        #divCPFI{
+            height: 50px;
+        }
+
+        #IPessoaisCinco{
+            margin: 2px 0 0 -15px;
+        }
+
+        #divOEI{
+            margin-left: -20px;
+            height: 52px;
+        }
+
+        #divRGI{
+            height: 52px;
+        }
+
+        #IPessoaisSeis{
+            margin: 4px 0 0 -15px;
+        }
+
+        #divPaisNascI{
+            height: 50px;
+        }
+
+        #divEmailI{
+            height: 50px;
+            margin-left: -20px;
+        }
+
+        #IResidencialUm{
+            margin: 6px 0 0 -15px;
+        }
+
+        #divCEPI{
+            height: 50px;
+        }
+
+        #divEndI{
+            height: 50px;
+            margin-left: -20px;
+        }
+
+        #IResidencialDois{
+            margin: 6px 0 0 -15px;
+        }
+
+        #divNumI{
+            height: 50px;
+        }
+
+        #divComplementoI{
+            height: 50px;
+            margin-left: -20px;
+        }
+
+        #IResidencialTres{
+            margin: 6px 0 0 -14px;
+        }
+
+        #divBairroI{
+            height: 50px;
+        }
+
+        #divCidadeI{
+            height: 50px;
+            margin-left: -20px;
+        }
+
+        #divEstadoI{
+            height: 50px;
+            margin-left: -20px;
+        }
+
+        #IResidencialQuatro{
+            margin: 6px 0 0 -14px;
+        }
+
+        #divTelI{
+            margin-left: -20px;
+        }
+
+        #divDDD2I{
+            margin-left: -20px;
+        }
+
+        #divCelI{
+            margin-left: -20px;
+        }
+    /*#endregion Passo2*/
+    /*#region Passo3*/
+    #IAcademicoUm{
+        margin: -2px 0 0 -15px;
+    }
+
+    #divCursoUniUmI{
+        height: 50px;
+    }
+
+    #divAnoUmI{
+        height: 50px;
+        margin-left: -20px;
+    }
+
+    #IAcademicoDois{
+        margin: 6px 0 0 -15px;
+    }
+
+    #divInstUmI{
+        Height:50px;
+    }
+
+    #IAcademicoTres{
+        margin: 6px 0 0 -14px;
+    }
+
+    #divCursoUniDoisI{
+        height:50px;
+    }
+
+    #divAnoDoisI{
+        height:50px;
+        margin-left:-20px;
+    }
+
+    #IAcademicoQuatro{
+        margin: 6px 0 0 -14px;
+    }
+
+    #divInstDoisI{
+        height:50px;
+    }
+
+    #IEndProfUm{
+        margin: 6px 0 0 -14px;
+    }
+
+    #divEmpresaI{
+        height:50px;
+    }
+
+    #divCargoCompI{
+        height:50px;
+        margin-left:-20px;
+    }
+
+    #IEndProfDois{
+        margin:6px 0 0 -14px;
+    }
+
+    #divCargoI{
+        height:50px;
+        width:187px;
+    }
+
+    #divDataAdI{
+        height:50px;
+        margin-left:-20px;
+    }
+
+    #IEndProfTres{
+        margin:6px 0 0 -14px;
+    }
+
+    #divEmailComI{
+        height:50px;
+    }
+
+    #IEndProfQuatro{
+        margin:6px 0 0 -14px;
+    }
+
+    #divCEPComI{
+        height:50px;
+    }
+
+    #divEndComI{
+        height:50px;
+        margin-left:-20px;
+    }
+
+    #IEndProfCinco{
+        margin:6px 0 0 -14px;
+    }
+
+    #divNumComI{
+        height:50px;
+    }
+
+    #divCompComI{
+        height:50px;
+        margin-left:-20px;
+    }
+
+    #IEndProfSeis{
+        margin:6px 0 0 -14px;
+    }
+
+    #divBairroComI{
+        height:50px;
+    }
+
+    #divCidadeComI{
+        height:50px;
+        margin-left:-20px;
+    }
+
+    #divEstadoComI{
+        height:50px;
+        margin-left:-20px;
+    }
+
+    #IEndProfSete{
+        margin:6px 0 0 -14px;
+    }
+
+    #divPerfilComI{
+        height:50px;
+        width:313px;
+    }
+
+    #IEndProfOito{
+        margin:6px 0 0 -14px;
+    }
+
+    #divDDDComI{
+        height:50px;
+    }
+
+    #divTelComI{
+        height:50px;
+        margin-left:-20px;
+    }
+
+    #IEndProfNove{
+        margin:6px 0 0 -14px;
+    }
+
+    #divFaxComI{
+        height:50px;
+        margin-left:-20px;
+    }
+    /*#endregion Passo3*/
+    /*#endregion*/
+}
+
+@media screen and (max-width:767px){
+    /*#region Interessado*/
+
+    #menupqn {
+        margin-right: 6% !important;
+    }
+
+    #corpo{
+        margin-left:10%;
+    }
+
+    #ficha{
+        margin-left: 7%;
+    }
+
+    #lblErro{
+        margin-left: -8px;
+    }
+
+    #corpo{
+        width: 450px;
+        margin-left: 50%;
+        position: relative;
+        left: -275px;
+    }
+
+    #Home{
+        display:block;
+    }
+
+    #Institucional{
+        display:block;
+    }
+
+    #Cursos{
+        display:block;
+    }
+
+    #Unidades{
+        display:block;
+    }
+
+    #Biblioteca{
+        display:block;
+    }
+
+    #Internacional{
+        display:block;
+    }
+
+    #Solucoes{
+        display:block;
+    }
+
+    #Galeria{
+        display:block;
+    }
+
+    #Eventos{
+        display:block;
+    }
+
+    #Esags{
+        display:block;
+    }
+
+        #teste{
+        position: absolute;
+        left: 50%;
+        margin-left: -96px;
+        top: 2px;
+        width: 233px;
+    }
+
+    #teste1{
+        position: absolute;
+        left: 5%;
+        display:none;
+        width: 180px;
+        top: 9%;
+    }
+
+    /*#endregion Interessado*/
+    /*#region Inscricao Passos*/
+    #bs-example-navbar-collapse-1{
+        margin-left: -71px;
+padding-left: 11%;
+    }
+    
+    #menubempqn{
+        padding-left: 32px;
+    }
+
+    #Form1Inscricao{
+        margin-left:-8%;
+    }
+
+    #divPeriodoI{
+        margin-left: 1px;
+    }
+
+    #divCursoI{
+        margin-left:1px;
+        width: 378px;
+    }
+
+    #divTipoCursoI{
+        width:385px;
+    }
+
+    #divComoSoubeI{
+        width: 378px;
+    }
+
+    #Corpo_ddlCatCur{
+        width: 330px !important;
+    }
+
+    #Corpo_ddlCurso{
+        width: 330px !important;
+    }
+
+    #Corpo_ddlRegiao{
+        width: 330px !important;
+    }
+
+    #Corpo_ddlPeriodo{
+        width: 330px !important;
+    }
+
+    #Corpo_folder{
+        width: 330px !important;
+    }
+
+    #Corpo_ddlCLASSE{
+        width: 330px !important;
+    }
+
+    #Corpo_dllCOMOSOUBE{
+        width: 330px !important;
+    }
+
+    #IPessoaisDois{
+        width: 366px;
+    }
+
+    #divNascI{
+        margin-left:-15px;
+    }
+
+    #divEmailI{
+        margin-bottom: 10px;
+        margin-top: 7px;
+        width: 349px;
+    }
+
+    #IResidencialUm{
+        width: 393px;
+    }
+
+    #IResidencialQuatro{
+        width:374px;
+    }
+
+    #divCursoUniUmI{
+        height: 50px;
+        width: 360px;
+        margin: 0 0 6px 0px;
+    }
+
+    #divAnoUmI{
+        height: 50px;
+        width: 153px;
+        margin: 0 0 6px 0px;
+    }
+
+    #divInstUmI{
+        height: 50px;
+        width: 360px;
+        margin: 0 0 6px 0px;
+    }
+
+    #divCursoUniDoisI{
+        height: 50px;
+        width: 360px;
+        margin: 0 0 6px 0px;
+    }
+
+    #divAnoDoisI{
+        height:50px;
+        width:153px;
+        margin:0 0 6px 0;
+    }
+
+    #divInstDoisI{
+        height: 50px;
+        width: 360px;
+        margin: 0 0 6px 0px;
+    }
+
+    #divEmpresaI{
+                height: 50px;
+        width: 360px;
+        margin: 0 0 6px 0px;
+    }
+
+    #divCargoCompI{
+                height: 50px;
+        width: 360px;
+        margin: 0 0 6px 0px;
+    }
+
+    #divCargoI{
+                height: 50px;
+        width: 167px;
+        margin: 0 0 6px 0px;
+    }
+
+    #divDataAdI{
+                height: 50px;
+        width: 180px;
+        margin: 0 0 6px -13px;
+    }
+
+    #divEmailComI{
+                height: 50px;
+        width: 360px;
+        margin: 0 0 6px 0px;
+    }
+
+    #IEndProfDois{
+        width:365px;
+    }
+
+    #divCEPComI{
+        width: 121px;
+    }
+
+    #divEndComI{
+        width:252px;
+    }
+
+    #divCompComI{
+        width: 235px;
+    }
+
+    #divNumComI{
+        width: 121px;
+    }
+
+    #divBairroComI{
+        width: 121px;
+    }
+
+    #divCidadeComI{
+        width: 150px;
+    }
+
+    #divEstadoComI{
+        width: 121px;
+    }
+
+    #IEndProfQuatro{
+        width:360px;
+    }
+
+    #IEndProfSeis{
+        width:360px;
+    }
+
+    #divRegiaoI{
+        width: 360px;
+        margin-bottom: 6px;
+    }
+    /*#endregion Inscricao Passos*/
+}
+
+@media screen and (max-width: 553px){
+    /*#region Interessado*/
+        #teste1{
+        display:none;
+    }
+
+    #menupqn{
+        margin-right: 9%; 
+    }
+
+    #teste{
+        position: absolute;
+        left: 50%;
+        margin-left: -96px;
+        top: 2px;
+        width: 233px;
+    }
+
+    #teste1{
+        position: absolute;
+        left: 5%;
+        width: 180px;
+        top: 9%;
+    }
+    /*#endregion Interessado*/
+    /*#region InscricaoPassos*/
+
+
+    /*#endregion*/
+}
+
+@media screen and (max-width: 400px){
+    body{
+        margin-right: 0px !important;
+    }
+}
+/*#endregion Ultimas Alteracoes Gerais Responsivo*/

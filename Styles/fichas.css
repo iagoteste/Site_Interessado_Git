@@ -1,0 +1,119 @@
+﻿/* ----------------------------------------
+       Haroldo M Souza.
+-------------------------------------------
+
+-----------------------
+
+
+
+        Geral
+----------------------- */
+
+* { margin:0px 0px 0px 0px; 
+padding:0px; font:100%/100% Arial, Helvetica, sans-serif; color:#727272; list-style:none; }
+img { border:none; }
+
+#Corpo_lblErro{
+            background-color: #FA6A6A !important;
+        height: 23px !important;
+        padding: 4px 0 0 6px !important;
+        width: 90% !important;
+        margin-left: -5px !important;
+}
+
+#Corpo_lMensagem{
+    color: white;
+    font-weight: bold;
+    margin-top:10px;
+}
+
+#Corpo_ddlCurso{
+    width: 100%;border-radius: 4px;
+}
+
+#Copy{
+    color:white;
+}
+
+#strongmesmo{
+    color:yellow;
+}
+
+.row{
+    margin-top: 13px;
+}
+
+#Sociais{
+    margin-top:-10px;
+}
+
+/* --------------------
+       Layout
+-------------------- */
+
+/* ----- Geral ----- */
+
+#global { width:960px; margin:0px auto; font-size:75%; }
+
+
+
+/* --------------------
+Configurações específicas
+-------------------- */
+
+h1, h2 { margin-bottom:16px; font-size:23px; font-family:"Arial Narrow"; color:rgb(12,132,160); }
+
+/* ----- Ficha de inscrição ----- */
+
+#global #ficha { width:656px; float:left; }
+#global #ficha .instrucoes {  line-height:18px; }
+#global #ficha h3 .titulo { font-size:23px; font-family:"Arial Narrow"; color:rgb(12,132,160); }
+#global #ficha .botao { padding-top:20px; clear:both; text-align:center; }
+#global #ficha .botao input { width:109px; height:34px; overflow:hidden; text-indent:-32767px; cursor:pointer; /* internacionalizacao */ }
+
+/* --------------------
+        Texto
+-------------------- */
+
+a { text-decoration:none; }
+
+.italic { font-style:italic; }
+.center { text-align:center; }
+
+/* --------------------
+     Formulários
+-------------------- */
+
+form p { margin-bottom:14px; }
+
+form .inline { width:auto; margin-right:16px; float:left; }
+
+/*label { height:16px; margin-bottom:5px; display:block; }*/
+
+input, select, textarea { padding:8px 8px 7px 8px; background-color:#fff; border:1px solid rgb(224,224,224); color:#727272; } 
+
+select { padding:7px 8px 6px 8px; }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+	select { line-height:27px; }
+}
+
+.data_textbox { float:left; }
+
+.mensagem_alerta { margin:0px 0px 5px 0px; padding:5px; text-align:center; background:rgb(255,235,193); }
+.mensagem_alerta span { font-weight:bold; color:#000; }
+
+/* ----- Botões ----- */
+
+
+
+/* --------------------
+       Funções
+-------------------- */
+
+/* ----- Clearfix ----- */
+
+.clearfix:after { content:"."; display:block; clear:both; visibility:hidden; line-height:0; height:0; }
+.clearfix { display:inline-block; }
+html[xmlns] .clearfix {	display: block; }
+* html .clearfix { height:1%; }

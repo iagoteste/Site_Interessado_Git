@@ -1,0 +1,54 @@
+﻿#MsgConfirma{
+    text-align:center;
+    font-family:'Arial Narrow';
+    font-size:26px;
+    color: rgb(12,132,160);
+    margin-top: 40px;
+}
+html, body
+{
+    height: 100% !important;
+    min-height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#corpo{
+    height: 100% !important;
+}
+
+#rodape{
+position: absolute !important;
+bottom: 0px !important;
+width: 100% !important;
+
+}
+
+.btnokconf{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+@media screen and (max-width:767px){
+    #MsgConfirma {
+        margin-top: -14px !important;
+    }
+    #teste{
+        margin-top: 48px !important;
+    }
+}
